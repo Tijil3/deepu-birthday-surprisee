@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Deepu! 🎂</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .animated {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff6f61;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #ff3b2f;
+    }
+
+    #error {
+      color: red;
+      font-weight: bold;
+    }
+
+    .story {
+      text-align: left;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Page 1: Happy Birthday -->
+    <div id="page1" class="page">
+      <h1 class="animated">HAPPY BIRTHDAY MY BESTFRIEND 💗💗🫂</h1>
+      <button onclick="nextPage('page2')">Next</button>
+    </div>
+
+    <!-- Page 2: Login Page -->
+    <div id="page2" class="page hidden">
+      <h2>Login Page</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="checkLogin()">Login</button>
+      <p id="error" class="hidden">Galat username ya password! 😡</p>
+    </div>
+
+    <!-- Page 3: Quiz Page -->
+    <div id="page3" class="page hidden">
+      <h2>Quiz Time! 😂</h2>
+      <p>Pehle he aapko bta de aap 19 ke ho gye h, yaad toh h na aapko🥰🥰😂😂</p>
+      <button onclick="showMessage('Congo! 🎉')">Yes</button>
+      <button onclick="showMessage('Wrong! 😂')">No</button>
+    </div>
+
+    <!-- Page 4: Naak wala question -->
+    <div id="page4" class="page hidden">
+      <h2>KYA AAPKE NAAK PR HAMESHA GUSSA RAHETA H? 😂</h2>
+      <button onclick="showMessage('KAFI SELF AWARE H AAP😂😂')">Yes</button>
+      <button onclick="showMessage('KAFI SELF AWARE H AAP😂😂')">Always</button>
+      <button onclick="showMessage('KAFI SELF AWARE H AAP😂😂')">Sometimes</button>
+      <button onclick="showMessage('SELF AWARE HONE KI JARURT H ABHI😂😂')">Never</button>
+    </div>
+
+    <!-- Page 5: Chand wala question -->
+    <div id="page5" class="page hidden">
+      <h2>Kya aap apne aap ko chand samajhte ho? 🌙</h2>
+      <button onclick="showMessage('Arz kia h "CHAND KO BHI APNE UPER ITNA GURUR NAHI, KYUKI USE PTA H KI DAAG TOH USME BHI H🥰🥰💗"')">Yes</button>
+      <button onclick="showMessage('Ek baar firse dekh lo apne aap ko🥰🥰🥰')">No</button>
+    </div>
+
+    <!-- Page 6: Final Story -->
+    <div id="page6" class="page hidden">
+      <h2>Ek DM, Ek Raat Aur Ek Rishta Jo Bas Ban Hi Gaya 💖</h2>
+      <p class="story">
+        27th July 2024…<br>
+        Ek DM aaya, ek ajeeb si vibe ke saath.<br>
+        Ek controversy se shuru hui baat,<br>
+        lekin kuch hi lafzon mein aisa connection bana ki<br>
+        jaise yeh dosti Pehle se likhi hui thi. 🫂❤<br><br>
+        Us waqt jo ho raha tha, uspe kabhi baat nahi hoti,<br>
+        kyunki zaroori yeh nahi ki kya beeta, zaroori yeh hai ki aaj kya hai.<br>
+        Aur ab sochta hoon, accha hi hua…<br>
+        Nahi toh LJ aage bhi rulata.<br>
+        Par ab, jo bhi hai, sirf accha hai. 💖<br><br>
+        "Kuch log zindagi mein dukh ban kar nahi,<br>
+        Dawa ban kar aate hain." 💖<br><br>
+        Phir dheere-dheere baatein badhti gayi…<br>
+        Aur vibe itni mili ki har baat mein ek alag apnapan tha. 🥰<br>
+        Kabhi mazak, kabhi samjhna, kabhi gussa,<br>
+        Lekin har cheez mein ek rishta jo har emotion se upar tha.<br><br>
+        Aap mujhse 6 mahine badi sahi, lekin andar se abhi bhi bacchi hi hain! 😂<br>
+        19 saal ki ho gayi, lekin masoomiyat aaj bhi wahi hai.<br>
+        Haan, jab zarurat padi to maa bhi bani, teacher bhi, aur sabse zyada – meri sabse pyaari dost bhi. 🫂❤<br><br>
+        Aur ek cheez pakki hai –<br>
+        Har kalesh ke baad manana toh mujhe hi padta hai! 😂 (Chhota jo hoon na!)<br>
+        Aap gussa hongi, phir main sorry bolunga,<br>
+        Phir hans ke kahengi – "Chal, rehne de!" 😆<br><br>
+        "Sachchi dosti wahi hoti hai,<br>
+        Jisme galti ka haq bhi ho, aur manane ka bhi!" 💖<br><br>
+        Ab jab aap badi ho kar paise kamayengi,<br>
+        Toh mujhe Hot Wheels dilayengi, 😂🏎<br>
+        Aur jab main kamaunga, toh hum France, Switzerland, Dubai – sab jagah ghoomne jayenge! 😍✈🌍<br><br>
+        Aaj aapka din hai, aapka Happy Wala Birthday! 🎂🎉<br>
+        Dua karta hoon, aap hamesha hansti rahen, dil kabhi udaas na ho. 🤲🥰<br>
+        Jo chahein, wo aapko khud chal kar mile,<br>
+        Aur jo na chahein, wo aapke raste se hat jaye! 😂<br><br>
+        🎉 Happy Birthday, Deepu! 🎂❤<br>
+        (PS: Aap chahein jitni bhi badi ho jayein, mere liye toh ab bhi wahi bacchi hi rahengi! 😂💖)<br><br>
+        ---<br>
+        "Dost toh hazaar milenge, par aap jaisa koi nahi,<br>
+        Har baat mein hasi, har baat mein koi kahani nahi.<br>
+        Aapse jhagde bhi hote hain, par pyaar bhi utna hi hai,<br>
+        Chhoti si zindagi hai, bas yeh rishta kabhi puraana nahi!" 🫂❤
+      </p>
+      <button onclick="prevPage('page5')">Previous</button>
+    </div>
+  </div>
+
+  <script>
+    function nextPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+
+    function prevPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+
+    function checkLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const error = document.getElementById('error');
+
+      if (username === 'deebee' && password === 'deepanshi@#1') {
+        nextPage('page3');
+      } else {
+        error.classList.remove('hidden');
+      }
+    }
+
+    function showMessage(message) {
+      alert(message);
+    }
+  </script>
+</body>
+</html>
